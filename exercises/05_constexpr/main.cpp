@@ -7,6 +7,7 @@ constexpr unsigned long long fibonacci(int i) {
         case 1:
             return 1;
         default:
+        if (i > 20) return 0;
             return fibonacci(i - 1) + fibonacci(i - 2);
     }
 }
